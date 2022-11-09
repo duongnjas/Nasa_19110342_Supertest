@@ -16,7 +16,7 @@ describe('GET /planets', function() {
 });
 
 describe('GET /launches', function() {
-    it('Missing launch props', function(done) {
+    it('responds with json', function(done) {
       request(app)
         .get('/launches')
         .set('Accept', 'application/json')
